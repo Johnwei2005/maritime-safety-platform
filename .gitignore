@@ -1,0 +1,13 @@
+# 忽略大型模型文件
+models/offshore_oil_platform.stp
+models/*.stp
+
+# 忽略构建产物
+visualization/dist/
+visualization/node_modules/
+__pycache__/
+*.pyc
+
+# 忽略环境文件
+venv/
+.env
