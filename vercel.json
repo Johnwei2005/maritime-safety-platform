@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd public && npm install && npm run build",
+  "buildCommand": "cd public && npm install --no-fund --no-audit && npm run build",
   "outputDirectory": "public/dist",
+  "installCommand": "pip install --no-cache-dir --user -r api/requirements.txt",
   "functions": {
     "api/**/*.py": {
       "runtime": "@vercel/python@3.1.0",
