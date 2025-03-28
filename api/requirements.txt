@@ -1,0 +1,11 @@
+# Minimal core Python packages for Vercel deployment
+numpy==1.26.4
+scipy==1.13.0
+networkx==3.3
+scikit-learn==1.4.2
+trimesh==4.4.0
+matplotlib==3.9.0
+pandas==2.2.2
+flask==3.0.3
+requests==2.32.3
+pillow==10.3.0

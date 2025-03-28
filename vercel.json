@@ -1,18 +1,16 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/main.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb"
-      }
+  "buildCommand": "cd public && npm install && npm run build",
+  "outputDirectory": "public/dist",
+  "functions": {
+    "api/**/*.py": {
+      "runtime": "python3.9",
+      "memory": 1024,
+      "maxDuration": 10
     }
-  ],
+  },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/main.py"
-    }
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/public/dist/$1" }
   ]
 }
