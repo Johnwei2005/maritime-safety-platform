@@ -1,3 +1,4 @@
+# Minimal Python packages for Vercel deployment
 # Python packages for Vercel deployment
 aiohappyeyeballs==2.4.6
 aiohttp==3.11.13
@@ -8,7 +9,7 @@ anyio==4.8.0
 attrs==25.1.0
 babel==2.17.0
 brotli==1.1.0
-brotli-python==1.1.0
+brotli==1.1.0
 cached-property==1.5.2
 cached_property==1.5.2
 certifi==2025.1.31
